@@ -1,0 +1,17 @@
+server:
+  port: 9999
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/
+      suffix: .jsp
+app:
+  client:
+    clientID: DpeGsXwMZuainG5XzDs1tRDmcdnbu86n
+    clientSecret: qDdonREau1SU6nXFZiTfoCw9-6cRZv3gqcv73Wg8qDtbmlpIWN9TMkJtHwJ-1Ro0
+    scope: openid profile
+    redirectURI: http://localhost:9999/oauth/access
+  auth0:
+    authorizationURI: https://mifraz.auth0.com/authorize
+    tokenURI: https://mifraz.auth0.com/oauth/token
+    audienceURI: https://mifraz.auth0.com/api/v2/
